@@ -1,4 +1,4 @@
-# wealthsimple-web-dark
+# Dark mode for Wealthsimple web
 
 Turns the web version of Wealthsimple dark, unofficial dark mode for Wealthsimple.
 

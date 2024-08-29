@@ -348,3 +348,9 @@
 .fWZNcP {
     color: #a9b883;
 }
+
+@media (min-width: 768px) {
+    .ggwhpI {
+        background: #181715;
+    }
+}

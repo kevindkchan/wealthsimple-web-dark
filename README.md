@@ -11,3 +11,4 @@ An unofficial dark mode for the web version of Wealthsimple.
 5. Paste everything in style.css in the box below the URL box
 
 WORK IN PROGRESS
+**Currently working on a jQuery file to make sure future updates don't break the CSS code**

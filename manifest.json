@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Wealthsimple Dark Mode",
+  "version": "1.0",
+  "description": "Turns Wealthsimple into dark mode for a better visual experience.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["https://my.wealthsimple.com/app/home"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://my.wealthsimple.com/app/home"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

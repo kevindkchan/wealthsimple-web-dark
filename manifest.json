@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Wealthsimple Dark Mode",
   "version": "1.0",
-  "description": "Turns Wealthsimple into dark mode for a better visual experience.",
+  "description": "Dark mode for the web version of Wealthsimple, because it's taking them ages to implement this.",
   "action": {
     "default_popup": "popup.html"
   },

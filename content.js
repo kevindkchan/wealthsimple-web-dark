@@ -1,4 +1,4 @@
-console.log("Wealthsimple Dark Mode content script loaded.");
+console.log("Wealthsimple Dark Mode browser extension successfully loaded.");
 
 const colorSwaps = {
   "#93290b": "#f98b73",
@@ -22,6 +22,7 @@ const backgroundSwaps = {
   "#f1f1f1": "#181715",
 };
 
+// Converts rgb to hex
 function rgbToHex(rgb) {
   const match = rgb.match(/\d+/g);
   if (!match || match.length < 3) return null;
@@ -35,6 +36,7 @@ function rgbToHex(rgb) {
   );
 }
 
+// Applies styles
 function applyDarkModeToElement(el) {
   if (!(el instanceof HTMLElement)) return;
 
@@ -61,7 +63,7 @@ function applyDarkModeToElement(el) {
 // Initial pass
 document.querySelectorAll("*").forEach(applyDarkModeToElement);
 
-// Watch for future changes
+// MutationObserver
 const observer = new MutationObserver(mutations => {
   for (const mutation of mutations) {
     mutation.addedNodes.forEach(node => {
